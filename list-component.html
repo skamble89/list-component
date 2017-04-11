@@ -1,0 +1,33 @@
+<link rel="import" href="/bower_components/polymer/polymer.html">
+
+<!--
+`list-component`
+Component to display list
+
+@demo demo/index.html
+-->
+
+<dom-module id="list-component">
+  <template>
+    <style>
+      
+    </style>
+    
+  </template>
+
+  <script>
+    class ListElement extends Polymer.Element {
+      static get is() { return 'list-component'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'list-component'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(ListElement.is, ListElement);
+  </script>
+</dom-module>
