@@ -12,7 +12,9 @@ Component to display list
     <style>
       
     </style>
-    
+    <ul>
+      <slot name="list-items"></slot>
+    </ul>
   </template>
 
   <script>
@@ -20,7 +22,7 @@ Component to display list
       static get is() { return 'list-component'; }
       static get properties() {
         return {
-          prop1: {
+          componentName: {
             type: String,
             value: 'list-component'
           }
